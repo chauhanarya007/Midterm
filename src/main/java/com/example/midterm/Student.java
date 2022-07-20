@@ -109,17 +109,21 @@ public class Student {
 
     }
 
-    public Student(String first_name, String last_name, String gender, String telephone_number, String province, int student_number, int average_grade, String major_code) {
+    public Student(String first_name, String last_name, String gender, String province, String telephone_number, String major_code, int student_number, int average_grade) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.gender = gender;
         this.province = province;
-        this.student_number = student_number;
         this.telephone_number = telephone_number;
-        this.average_grade = average_grade;
         this.major_code = major_code;
+        this.student_number = student_number;
+        this.average_grade = average_grade;
     }
 
     private String first_name, last_name, gender, province, telephone_number, major_code;
     private int student_number, average_grade;
+
+    public int getStudent_number() {
+        return student_number;
+    }
 }
